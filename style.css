@@ -23,7 +23,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(15, 15, 15);
+    color: green;
 }
 
 /* spacing on all sections */
@@ -134,4 +134,24 @@ section{
     text-align: center;
     font-size: 4.5rem;
     
+}
+@media(max-width:991px){
+    .header{
+        padding:2rem 3%;
+    }
+    section{
+        padding:10rem 3% 2rem;
+    }
+    .certificate{
+        padding: 7rem;
+    }
+    .cert-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:768px){
+    .cert-container{
+        width:auto;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
